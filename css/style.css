@@ -55,12 +55,13 @@ section {
 #chamada-relogio  .button-ofertas a {
     background-color: #fff003;
     color: #0E0E14;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
     text-decoration: none;
     border-radius: 5px;
     margin-top: -25px;
-    padding: 10px;
+    padding: 10px 15px;
+
 }
 
 #ofertou .title,
