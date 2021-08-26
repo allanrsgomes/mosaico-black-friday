@@ -1,0 +1,626 @@
+/* CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #0E0E14;
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#chamada-relogio .percentage {
+  background-image: url("https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/fundo.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin-bottom: -60px;
+  height: 80px;
+}
+
+#chamada-relogio .chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    border: 1px solid #505054;
+    box-shadow: inset 0px 0px 0px 1px #9595956E;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgba(29,29,35,0.5);
+    height: 390px;
+    margin: 0 10px;
+}
+
+#chamada-relogio .chamada .logo,
+#chamada-relogio .chamada .texto,
+#chamada-relogio .chamada .relogio{
+    width: 100%;
+    text-align: center;
+}
+
+#chamada-relogio  .button-ofertas {
+    display: flex;
+    justify-content: space-around;
+}
+
+#chamada-relogio  .button-ofertas a {
+    background-color: #fff003;
+    color: #0E0E14;
+    font-size: 18px;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: -25px;
+    padding: 10px;
+}
+
+#ofertou .title,
+#marcas .title {
+    display: flex;
+    color: #FFF001;
+    font-size: 24px;
+    text-align: center;
+}
+
+#ofertou .title:after,
+#marcas .title:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #DFDFDF;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#ofertou .title:before,
+#marcas .title:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #DFDFDF;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+#ofertou .subtitle,
+#marcas .subtitle {
+    display: flex;
+    flex-direction: column;
+    color: #F2F2F2;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+#ofertou .slider .item a {
+  height: 200px;
+}
+
+#mosaicos .banners-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: -30px;
+}
+
+#mosaicos .banners-content .banner-principal img {
+  width: 100%;
+}
+
+#mosaico-final a {
+  display: flex;
+  justify-content: center
+}
+
+#mosaico-final a img {
+  width: 100%;
+}
+
+
+/* CSS DO CARROSEL */
+
+.glider,
+.glider-contain {
+    margin: 0 auto;
+    position: relative
+}
+
+.glider,
+.glider-track {
+    transform: translateZ(0)
+}
+
+.glider-dot,
+.glider-next,
+.glider-prev {
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: 0
+}
+
+.glider-contain {
+    width: 100%
+}
+
+.glider {
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none
+}
+
+.glider-track {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  z-index: 1;
+  gap: 15px;
+}
+
+.glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.glider.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none
+}
+
+.glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.glider-slide {
+    user-select: none;
+    justify-content: center;
+    align-content: center;
+}
+
+.glider-slide img {
+    max-width: 100%
+}
+
+.glider::-webkit-scrollbar {
+    opacity: 0;
+    height: 0;
+}
+
+.glider-next,
+.glider-prev {
+    position: absolute;
+    background: 0 0;
+    z-index: 2;
+    font-size: 40px;
+    text-decoration: none;
+    left: -23px;
+    top: 30%;
+    cursor: pointer;
+    color: #666;
+    opacity: 1;
+    line-height: 1;
+    transition: opacity .5s cubic-bezier(.17, .67, .83, .67), color .5s cubic-bezier(.17, .67, .83, .67);
+}
+
+.glider-next:focus,
+.glider-next:hover,
+.glider-prev:focus,
+.glider-prev:hover {
+    color: #ccc
+}
+
+.glider-next {
+    right: -23px;
+    left: auto
+}
+
+.glider-next.disabled,
+.glider-prev.disabled {
+    opacity: .25;
+    color: #666;
+    cursor: default
+}
+
+.glider-hide {
+    opacity: 0
+}
+
+.glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0
+}
+
+.glider-dot {
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 8px;
+    height: 8px;
+    margin: 7px
+}
+
+.glider-dot:focus,
+.glider-dot:hover {
+    background: #ddd
+}
+
+.glider-dot.active {
+    background: #a89cc8
+}
+
+.js-carousel--simple-dots-ofertas,
+.js-carousel--simple-dots-banner,
+.js-carousel--simple-dots-marcas,
+.js-carousel--simple-dots-mosaico {
+    display: flex;
+}
+
+.c-carousel--simple {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.js-carousel--simple-prev-ofertas,
+.js-carousel--simple-next-ofertas,
+.js-carousel--simple-prev-banner,
+.js-carousel--simple-next-banner,
+.js-carousel--simple-prev-marcas,
+.js-carousel--simple-next-marcas,
+.js-carousel--simple-next-mosaico,
+.js-carousel--simple-prev-mosaico {
+  display: none;
+}
+
+
+@media(max-width:36em) {
+    .glider::-webkit-scrollbar {
+        opacity: 1;
+        -webkit-appearance: none;
+        width: 7px;
+        height: 3px
+    }
+
+    .glider::-webkit-scrollbar-thumb {
+        opacity: 1;
+        border-radius: 99px;
+        background-color: rgba(156, 156, 156, .25);
+        -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .25);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .25)
+    }
+}
+
+.grid-container>a>img {
+    border-radius: 20px;
+}
+
+/* CSS DO RELOGIO */
+  
+.flipclock {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.flipclock * {
+  box-sizing: inherit;
+}
+
+.leaf {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4px;
+  perspective: 300px;
+}
+
+.leaf::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-top: 8px;
+  transform: translateX(-50%);
+  color: #f2f2f2;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.top,
+.bottom,
+.leaf-front,
+.leaf-back {
+  position: relative;
+  display: block;
+  height: 64px;
+  width: 120px;
+  background-color: #f2f2f2;
+  color: #2d3748;
+  overflow: hidden;
+  border-color: #2d3748;
+}
+.top span,
+.bottom span,
+.leaf-front span,
+.leaf-back span {
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 128px;
+  text-align: center;
+  font-family: "Impact", sans serif;
+  font-size: 80px;
+  line-height: 128px;
+  transform: translateX(-50%);
+}
+
+.leaf._3-digits .top,
+.leaf._3-digits .bottom,
+.leaf._3-digits .leaf-front,
+.leaf._3-digits .leaf-back {
+  width: 148px;
+}
+
+.top,
+.leaf-front {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+.top span,
+.leaf-front span {
+  top: 0;
+}
+
+.leaf-front {
+  position: absolute;
+  z-index: 10;
+}
+
+.bottom,
+.leaf-back {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.bottom span,
+.leaf-back span {
+  bottom: 0;
+}
+
+.leaf-back {
+  position: absolute;
+  top: 64px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 600px) {
+  .flipclock {
+    padding: 6.6666666667vw;
+  }
+
+  .leaf {
+    margin: 0 0.6666666667vw;
+  }
+
+  .leaf::after {
+    margin-top: 1.3333333333vw;
+    font-size: 2.3333333333vw;
+  }
+
+  .top,
+.bottom,
+.leaf-front,
+.leaf-back {
+    height: 10.6666666667vw;
+    width: 20vw;
+  }
+  .top span,
+.bottom span,
+.leaf-front span,
+.leaf-back span {
+    height: 21.3333333333vw;
+    font-size: 13.3333333333vw;
+    line-height: 21.3333333333vw;
+  }
+
+  .leaf._3-digits .top,
+.leaf._3-digits .bottom,
+.leaf._3-digits .leaf-front,
+.leaf._3-digits .leaf-back {
+    width: 24.6666666667vw;
+  }
+
+  .top,
+.leaf-front {
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+  }
+
+  .bottom,
+.leaf-back {
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+  }
+
+  .leaf-back {
+    top: 10.6666666667vw;
+  }
+}
+.leaf-front {
+  transform-origin: bottom center;
+  transform: rotateX(0deg);
+  transform-style: preserve-3d;
+  transition-delay: 0.3s;
+}
+
+.leaf-back {
+  transform-origin: top center;
+  transform: rotateX(90deg);
+  transform-style: preserve-3d;
+  transition-delay: 0s;
+}
+
+.bottom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  filter: blur(10px);
+}
+
+.flip .leaf-front {
+  transform: rotateX(-90deg);
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease-in;
+  transition-delay: 0s;
+  color: black;
+  background-color: #737373;
+}
+.flip .leaf-back {
+  transform: rotateX(0deg);
+  transition: transform 0.3s ease-in, background-color 0.3s ease-in, color 0.3s ease-in;
+  transition-delay: 0.3s;
+}
+.flip .bottom::before {
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.15s;
+  height: 100%;
+}
+
+@media screen and (min-width: 64em) {
+
+  .c-carousel--simple {
+    flex-wrap: nowrap;
+  }
+
+  .js-carousel--simple-prev-ofertas,
+  .js-carousel--simple-next-ofertas,
+  .js-carousel--simple-prev-banner,
+  .js-carousel--simple-next-banner,
+  .js-carousel--simple-prev-marcas,
+  .js-carousel--simple-next-marcas,
+  .js-carousel--simple-next-mosaico,
+  .js-carousel--simple-prev-mosaico {
+    display: block;
+    padding: 5px;
+    z-index: 2;
+    background-color: #707070;
+    opacity: 0.7;
+    outline: none;
+    border-radius: 5px;
+  }
+
+
+  .js-carousel--simple-next-ofertas,
+  .js-carousel--simple-next-banner,
+  .js-carousel--simple-next-marcas,
+  .js-carousel--simple-next-mosaico {
+    margin-right: -25px;
+  }
+
+  .js-carousel--simple-prev-ofertas,
+  .js-carousel--simple-prev-banner,
+  .js-carousel--simple-prev-marcas {
+    margin-left: -25px;
+  }
+
+  .js-carousel--simple-next-marcas,
+  .js-carousel--simple-prev-marcas {
+    margin-bottom: 25px;
+  }
+
+  .js-carousel--simple-dots-ofertas,
+  .js-carousel--simple-dots-banner,
+  .js-carousel--simple-dots-marcas,
+  .js-carousel--simple-dots-mosaico {
+    display: none!important;
+  }
+
+  #chamada-relogio .percentage {
+    margin-bottom: -60px;
+    height: 110px;
+  }
+
+  #chamada-relogio .chamada {
+      flex-direction: row;
+      height: 210px;
+      gap: 20px;
+      padding: 0 50px;
+      margin: 0;
+  }
+
+  #chamada-relogio .chamada .logo,
+  #chamada-relogio .chamada .texto,
+  #chamada-relogio .chamada .relogio{
+      width: 33.33%;
+  }
+
+  #ofertou .title-ofertou:after {
+      margin-left: 150px;
+  }
+  
+  #ofertou .title-ofertou:before {
+      margin-right: 150px;
+  }
+
+  #ofertou .subtitle-ofertou {
+      flex-direction: row;
+  }
+
+
+
+
+
+}
+
+
+@media screen and (min-width: 80em) {
+
+  #mosaicos .banners-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #mosaicos .banners-content .banner-principal {
+    text-align: left;
+    width: 54%;
+    margin-bottom: -240px;
+  }
+
+  #mosaicos .banners-content .banners-menores {
+    position: relative;
+    left:54%; 
+    width:46%;
+  }
+}
