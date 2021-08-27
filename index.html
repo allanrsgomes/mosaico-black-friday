@@ -52,7 +52,9 @@
         </div>
 
         <div  class="slider c-carousel c-carousel--simple" id="slider-ofertas">
-            <button class="js-carousel--simple-prev-ofertas">&#11013</button>
+            <div class="js-carousel--simple-prev-ofertas">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/prev.png" alt="prev">
+            </div>
             <div class="slider__content c-carousel__slides js-carousel--ofertas" id="slider-banners-ofertas_content">
                 <a target="_parent" id="categoria-01" href="https://www.panvel.com/panvel/ofertas">
                     <div class="item c-carousel__slide">
@@ -257,17 +259,19 @@
                             >
                     </div>
                 </a>
-                
             </div>
-            <button class="js-carousel--simple-next-ofertas">&#10145</button>
-            <div class="js-carousel--simple-dots-ofertas"></div>
+            <div class="js-carousel--simple-next-ofertas">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/next.png" alt="next">
+            </div>
         </div>
     </section>
 
     <!-- CARROUSEL BANNERS -->
     <section id="banners">
         <div class="slider c-carousel c-carousel--simple" id="slider-banners">
-            <button class="js-carousel--simple-prev-banner">&#11013</button>
+            <div class="js-carousel--simple-prev-banner">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/prev.png" alt="prev">
+            </div>
             <div class="slider__content c-carousel__slides js-carousel--banner" id="slider-banners_content">
                 <a target="_parent" id="oferta-05" href="https://www.panvel.com/panvel/ofertas">
                     <div class="item c-carousel__slide">
@@ -305,8 +309,9 @@
                     </div>
                 </a>
             </div>
-            <button class="js-carousel--simple-next-banner">&#10145</button>
-            <div class="js-carousel--simple-dots-banner"></div>
+            <div class="js-carousel--simple-next-banner">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/next.png" alt="next">
+            </div>
         </div>
     </section>
 
@@ -321,7 +326,9 @@
             </div>
         </div>
         <div class="slider c-carousel c-carousel--simple" id="slider-marcas">
-            <button class="js-carousel--simple-prev-marcas">&#11013</button>
+            <div class="js-carousel--simple-prev-marcas">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/prev.png" alt="prev">
+            </div>
             <div class="slider__content c-carousel__slides js-carousel--marcas" id="slider-marcas_content">
                 <a target="_parent" id="oferta-05" href="https://www.panvel.com/panvel/ofertas">
                     <div class="item c-carousel__slide">
@@ -534,8 +541,9 @@
                     </div>
                 </a>
             </div>
-            <button class="js-carousel--simple-next-marcas">&#10145</button>
-            <div class="js-carousel--simple-dots-marcas"></div>
+            <div class="js-carousel--simple-next-marcas">
+                <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/next.png" alt="next">
+            </div>
         </div>
     </section>
 
@@ -551,7 +559,9 @@
             </div>
             <div class="banners-menores">
                 <div class="slider c-carousel c-carousel--simple" id="slider-mosaico">
-                    <button class="js-carousel--simple-prev-mosaico">&#11013</button>
+                    <div class="js-carousel--simple-prev-mosaico">
+                        <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/prev.png" alt="prev">
+                    </div>
                     <div class="slider__content c-carousel__slides js-carousel--mosaico" id="slider-banners_content">
 
                         <a target="_parent" id="mosaico-02" href="https://www.panvel.com/panvel/ofertas">
@@ -640,8 +650,9 @@
                         </a>
 
                     </div>
-                    <button class="js-carousel--simple-next-mosaico">&#10145</button>
-                    <div class="js-carousel--simple-dots-mosaico"></div>
+                    <div class="js-carousel--simple-next-mosaico">
+                        <img src="https://cdn1.staticpanvel.com.br/cdn_service/landpages/home/black-2021/img/next.png" alt="next">
+                    </div>
                 </div>
             </div>
         </div>
@@ -663,7 +674,7 @@
     //Carrousel Categorias
     var $simpleCarouselOfertas = document.querySelector(".js-carousel--ofertas");
     sliderOfertas = new Glider($simpleCarouselOfertas, {
-        slidesToShow: 2,
+        slidesToShow: 2.3,
         slidesToScroll: 2,
         draggable: true,
         dots: ".js-carousel--simple-dots-ofertas",
@@ -704,15 +715,15 @@
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3.3,
-                    slidesToScroll: 3.3,
+                    slidesToShow: 3.5,
+                    slidesToScroll: 2,
                 },
             },
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4.3,
-                    slidesToScroll: 4.3,
+                    slidesToShow: 4.5,
+                    slidesToScroll: 2,
                 },
             },
         ],
@@ -721,7 +732,7 @@
     //Carrousel Marcas
     var $simpleCarouselMarcas = document.querySelector(".js-carousel--marcas");
     sliderMarcas = new Glider($simpleCarouselMarcas, {
-        slidesToShow: 4.5,
+        slidesToShow: 4.3,
         slidesToScroll: 2,
         draggable: true,
         dots: ".js-carousel--simple-dots-marcas",
@@ -733,7 +744,7 @@
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 6.5,
+                    slidesToShow: 6.3,
                     slidesToScroll: 2,
                 },
             },
@@ -762,7 +773,7 @@
             {
                 breakpoint: 600,
                 settings: {
-                    slidesToShow: 3.2,
+                    slidesToShow: 3.5,
                     slidesToScroll: 2
                     ,
                 },
@@ -772,12 +783,6 @@
 
     // Função de autoplay
     let autoplayDelay = 5000;
-    let autoplayOfertas = setInterval(() => {
-        sliderOfertas.scrollItem('js-carousel--simple-next-ofertas')
-    }, autoplayDelay);
-    let autoplayMarcas = setInterval(() => {
-        sliderMarcas.scrollItem('js-carousel--simple-next-marcas')
-    }, autoplayDelay);
     let autoplayMosaico = setInterval(() => {
         sliderMosaico.scrollItem('js-carousel--simple-next-mosaico')
     }, autoplayDelay);
