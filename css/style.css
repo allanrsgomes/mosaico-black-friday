@@ -604,10 +604,6 @@ section {
       flex-direction: row;
   }
 
-
-
-
-
 }
 
 
@@ -615,18 +611,15 @@ section {
 
   #mosaicos .banners-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   #mosaicos .banners-content .banner-principal {
-    text-align: left;
-    width: 54%;
-    margin-bottom: -240px;
+    width: 50%;
+    margin-top: 5px;
   }
 
   #mosaicos .banners-content .banners-menores {
-    position: relative;
-    left:54%; 
-    width:46%;
+    width: 50%;
   }
 }
